@@ -36,7 +36,7 @@ cover:
     home: true
     archive: true
     others: true # can be written in front-matter 'cover: true'
-  background: https://img.yanlutong.com/uploadimg/image/20221121/20221121135344_72649.jpg
+  background: https://images7.alphacoders.com/131/1316101.png
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'Earendel の 小窝'
@@ -77,7 +77,7 @@ plugins:
       duration: 10000       # Duration (ms)
       fade: 1500            # fade duration (ms) (Not more than 1500)
       images:               # For personal use only. At your own risk if used for commercial purposes !!!
-        - https://img.yanlutong.com/uploadimg/image/20221121/20221121135344_72649.jpg
+        - https://images7.alphacoders.com/131/1316101.png
 
 ############################### Sidebar ############################### > start
 sidebar:
