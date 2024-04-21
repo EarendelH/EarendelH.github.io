@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EarendelH
-subtitle: '黑奴日记'
+title: EarendelH's Journal
+subtitle: '帕鲁日记'
 description: '寄系打工人日常'
 keywords:
 author: Earendel
@@ -42,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true 
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
