@@ -114,7 +114,7 @@ navbar:
 ############################### Cover ############################### > start
 cover:
   height_scheme: full # full, half
-  layout_scheme: focus # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  layout_scheme: search # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
   display:
     home: true
     archive: true
@@ -126,6 +126,10 @@ cover:
   subtitle: '寄系帕鲁日记'
   search: WHAT DO YOU WANT? # search bar placeholder
   features:
+    - name: 主页
+      icon: fa-solid fa-home
+      img: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f3e0.svg
+      url: /
     # - name: 文档
     #   icon: #
     #   img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
@@ -305,7 +309,7 @@ article:
 ############################### Comments ############################### > start
 comments:
   title: <i class='fa-solid fa-comments'></i> 评论
-  subtitle:
+  subtitle: Welcome to discuss.
   service: giscus
   # 可选评论系统 #
 
@@ -337,14 +341,14 @@ comments:
   # https://github.com/laymonage/giscus
   giscus:
     # 以下配置按照 yml 格式增删填写即可
-    # repo: xxx/xxx
-    # repo-id: xxx
-    # category: xxx
-    # category-id: xxx
-    # mapping: "pathname"
-    # reactions-enabled: "1"
-    # emit-metadata: "0"
-    # lang: "zh-CN"
+    repo: "EarendelH/blog_gitcus"
+    repo-id: "R_kgDOLxYTjg"
+    category: "Announcements"
+    category-id: "DIC_kwDOLxYTjs4Ce2E9"
+    mapping: "url"
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
     # 以上配置按照 yml 格式增删填写即可
     theme:
       light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
