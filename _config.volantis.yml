@@ -105,9 +105,9 @@ navbar:
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
-    - name: 背景音乐
-      icon: fa-solid fa-compact-disc
-  search: Search...   # Search bar placeholder
+    # - name: 背景音乐
+    #   icon: fa-solid fa-compact-disc
+  search: WHAT DO YOU WANT TO KNOW?   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
 
