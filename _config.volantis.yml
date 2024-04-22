@@ -83,7 +83,7 @@ scroll_smooth: true
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: https://i.pinimg.com/564x/e4/0b/8d/e40b8d8b26bf57097f53106cb1de3198.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: /images/authoricon.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
     title:
   menu:
@@ -126,14 +126,14 @@ cover:
   subtitle: '寄系帕鲁日记'
   search: WHAT DO YOU WANT? # search bar placeholder
   features:
-    - name: 文档
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
-    - name: 帮助
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: faqs/
+    # - name: 文档
+    #   icon: #
+    #   img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+    #   url: /v4/getting-started/
+    # - name: 帮助
+    #   icon: #
+    #   img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+    #   url: faqs/
     - name: 源码
       icon: fab fa-github
       img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
@@ -160,16 +160,16 @@ article:
     # hide excerpt
     hide_excerpt: false
     # show split line or not
-    line_style: solid # hidden, solid, dashed, dotted
+    line_style: dotted # hidden, solid, dashed, dotted
     # show author
-    author: false # true, false
+    author: true # true, false
     # show readmore button
     readmore: auto # auto, always
   # 文章详情页面的文章卡片本体布局方案
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    top_meta: [author,date,category,counter] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -289,14 +289,16 @@ article:
       share:
         - id: qq
           img:  volantis-static/media/org.volantis/logo/128/qq.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
-        - id: qzone
-          img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
-        - id: weibo
-          img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
-        - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
-          img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
-        - id: # telegram
-          img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+        - id: wechat
+          img:  volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        # - id: qzone
+        #   img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
+        # - id: weibo
+        #   img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        # - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+        #   img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        # - id: # telegram
+        #   img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
 ############################### Article Layout ############################### > end
 
 
@@ -565,7 +567,7 @@ sidebar:
           text: '文章数目：'
           unit: '篇'
         runtime:
-          enable: false
+          enable: true
           data: '2024/03/13'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
@@ -1171,7 +1173,7 @@ color_scheme:
 ############################### Custom css ############################### > start
 custom_css:
   cursor:
-    enable: #true
+    enable: true
     text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
     pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
     default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
@@ -1183,7 +1185,7 @@ custom_css:
   max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
   scrollbar:
     size: 4px
-    border: 2px
+    border: 4px
     background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
     hover_background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
   navbar:
@@ -1193,7 +1195,7 @@ custom_css:
   sidebar:
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   body:
-    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
+    effect: [shadow, floatable] # [shadow, floatable, blur]
     highlight:
       language: true # show language of codeblock
       grayscale: false # Enable grayscale effect
@@ -1241,10 +1243,10 @@ custom_css:
       style: normal
     codefont:
       fontfamily: 'Menlo, UbuntuMono, Monaco'
-      # name: 'Monaco'
-      # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
-      # weight: normal
-      # style: normal
+      name: 'Monaco'
+      url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
+      weight: normal
+      style: normal
 ############################### Custom css ############################### > end
 
 
@@ -1276,7 +1278,7 @@ seo:
 # https://ogp.me/
 # https://hexo.io/zh-cn/docs/helpers#open-graph
 open_graph:
-  image: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+  image: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
   twitter_card: summary # summary_large_image , summary
   #twitter_id:
   #twitter_site:
