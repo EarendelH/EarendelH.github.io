@@ -3,4 +3,4 @@
 ### 网课地址
 
 ### 高数
-{% link Khan数学-高数线代等（文档+视频）::https://zh.khanacademy.org/math::%}
+{% link Khan数学-高数线代等（文档+视频）::https://zh.khanacademy.org/math::https://cdn.kastatic.org/images/favicon.ico?logo%}
