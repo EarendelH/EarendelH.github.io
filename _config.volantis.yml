@@ -487,7 +487,7 @@ comments:
 
 ############################### Sidebar ############################### > start
 sidebar:
-  position: [left] # left right
+  position: left # left right
   # 主页、分类、归档等独立页面
   for_page: [blogger, category, tagcloud, donate]
   # layout: docs/post 这类文章页面
@@ -768,7 +768,7 @@ plugins:
   # 视差滚动效果 Slide Background
   parallax:
     enable: true
-    position: fixed       # cover: sticky on the cover.   fixed: Fixed as background for the site.
+    position: fixed      # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
     duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
@@ -886,7 +886,7 @@ plugins:
     time:     # 默认持续时间
       default: 5000
       quection: 20000
-    position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    position: 'bottomRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
     transitionIn: 'bounceInLeft'         # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
     transitionOut: 'fadeOutRight'        # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
     titleColor: 'var(--color-text)'      # 标题颜色
