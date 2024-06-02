@@ -506,10 +506,14 @@ sidebar:
       subtitle: 一名大一小萌新
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
+        - 
+        - 
         - icon: fa-solid fa-envelope
           url: mailto:1048872982@qq.com
         - icon: fab fa-github
           url: https://github.com/EarendelH/
+        - 
+        - 
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
