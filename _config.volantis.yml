@@ -105,6 +105,9 @@ navbar:
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
+    - name: 网址收藏
+      icon: fa-solid fa-bookmark
+      url: links/
     # - name: 背景音乐
     #   icon: fa-solid fa-compact-disc
   search: WHAT DO YOU WANT TO KNOW?   # Search bar placeholder
@@ -497,7 +500,7 @@ sidebar:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
       avatar: /images/authoricon.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
-      shape: circle # circle, rectangle
+      shape: rectangle # circle, rectangle
       url: /about/
       title: Earendel
       subtitle: 一名大一小萌新
