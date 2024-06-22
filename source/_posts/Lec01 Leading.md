@@ -1,5 +1,5 @@
 ---
-title: Mathematical Logic
+title: Mathematical Logic [Lec01 Leading]
 date: 2024-05-13 00:47:45
 tags:
 ---
@@ -20,7 +20,7 @@ tags:
 #words Syllogism::三段论
 
 - 三段论
-  ![[assets/Pasted image 20240501225003.png]]
+![[Pasted image 20240501225003.png]]
 - **Truth(正确性)** for statements, **Validity(有效性)** for arguments/reasoning. They are not the same.
 #words proposition::命题
 

@@ -2,7 +2,13 @@
 title : 计算机视觉自学笔记及实践【OpenCV】
 time : 2024-6-22
 tags: 计算机视觉,OpenCV
+cover : true
 ---
+
+自学计算机视觉和深度学习的笔记，欢迎大佬指正
+
+<!-- more -->
+
 ## OpenCV基础笔记
 ### 图片导入
 ```python
