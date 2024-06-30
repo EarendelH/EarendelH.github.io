@@ -1,6 +1,6 @@
 ---
 title : 计算机视觉自学笔记及实践【OpenCV】
-time : 2024-06-30 16:19:12
+time : 2024-06-30 16:28:26
 tags:
      - Opencv
      - 计算机视觉
@@ -11,6 +11,45 @@ cover : true
 # OpenCV基础笔记
 
 ## 图片读入
+
+
+```python
+import cv2
+import matplotlib.pyplot as plt
+violet=cv2.imread("autoricon.jpg")
+plt.imshow(violet)#为了避免jupyter-notebook中cv2.imshow()显示窗口无法关闭的问题，使用plt.imshow()代替
+plt.show()
+# cv2.imshow("Demo1",violet)
+# cv2.imshow("Demo2",violet)
+# cv2.waitKey(1)
+# cv2.destroyAllWindows()
+
+```
+
+
+    
+![png](cvlearn_files/cvlearn_2_0.png)
+    
+
+
+## 显示格式转换 
+为了避免jupyter-notebook中`cv2.imshow()`显示窗口无法关闭的问题，使用`plt.imshow()`代替  
+
+
+因为opencv读取的图片是BGR格式，而matplotlib是RGB格式，所以需要转换颜色映射
+
+
+```python
+img_rgb=cv2.cvtColor(violet,cv2.COLOR_BGR2RGB)
+plt.imshow(img_rgb)
+plt.show()
+```
+
+
+    
+![png](cvlearn_files/cvlearn_4_0.png)
+    
+
 
 
 ```python
@@ -68,43 +107,6 @@ print(violet)
       [212 244 250]
       [212 244 250]
       [212 244 250]]]
-
-
-
-```python
-import cv2
-import time
-import matplotlib.pyplot as plt
-violet=cv2.imread("autoricon.jpg")
-plt.imshow(violet)#为了避免cv2.imshow()显示窗口无法关闭的问题，使用plt.imshow()代替
-plt.show()
-# cv2.imshow("Demo1",violet)
-# cv2.imshow("Demo2",violet)
-# cv2.waitKey(1)
-# cv2.destroyAllWindows()
-
-```
-
-
-    
-![png](learn_files/learn_3_0.png)
-    
-
-
-## 显示格式转换
-因为opencv读取的图片是BGR格式，而matplotlib是RGB格式，所以需要转换
-
-
-```python
-img_rgb=cv2.cvtColor(violet,cv2.COLOR_BGR2RGB)
-plt.imshow(img_rgb)
-plt.show()
-```
-
-
-    
-![png](learn_files/learn_5_0.png)
-    
 
 
 ## 图片写入
@@ -171,7 +173,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_10_0.png)
+![png](cvlearn_files/cvlearn_10_0.png)
     
 
 
@@ -224,7 +226,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_12_1.png)
+![png](cvlearn_files/cvlearn_12_1.png)
     
 
 
@@ -250,7 +252,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_14_1.png)
+![png](cvlearn_files/cvlearn_14_1.png)
     
 
 
@@ -284,7 +286,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_16_1.png)
+![png](cvlearn_files/cvlearn_16_1.png)
     
 
 
@@ -329,7 +331,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_18_0.png)
+![png](cvlearn_files/cvlearn_18_0.png)
     
 
 
@@ -361,7 +363,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_20_0.png)
+![png](cvlearn_files/cvlearn_20_0.png)
     
 
 
@@ -387,7 +389,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_22_0.png)
+![png](cvlearn_files/cvlearn_22_0.png)
     
 
 
@@ -428,7 +430,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_25_0.png)
+![png](cvlearn_files/cvlearn_25_0.png)
     
 
 
@@ -454,7 +456,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_27_0.png)
+![png](cvlearn_files/cvlearn_27_0.png)
     
 
 
@@ -476,7 +478,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_29_0.png)
+![png](cvlearn_files/cvlearn_29_0.png)
     
 
 
@@ -519,7 +521,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_31_0.png)
+![png](cvlearn_files/cvlearn_31_0.png)
     
 
 
@@ -592,7 +594,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_35_0.png)
+![png](cvlearn_files/cvlearn_35_0.png)
     
 
 
@@ -701,7 +703,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_38_0.png)
+![png](cvlearn_files/cvlearn_38_0.png)
     
 
 
@@ -718,19 +720,19 @@ OpenCV提供了多种滤波方法，包括线性滤波、非线性滤波、自�
 ### 均值滤波
 在进行均值滤波时，首先要考虑需要对周围多少个像素点取平均值。通常情况下，会以当前像素点为中心，求行数和列数相等的一块区域内的所有像素点的像素值的平均值。以图中第 5 行第 4 列的像素点为中心，可以对其周围 3×3 区域内所有像素点的像素值求平均值，也可以对其周围 5×5 区域内所有像素点的像素值求平均值。我们对其周围 5×5 区域内的像素点的像素值求平均
 
-![image.png](learn_files/image.png)
+![image.png](cvlearn_files/image.png)
 
 对于图像的边界点，并不存在5x5的领域，可以只取图像内存在的周围邻域点的像素值均值。
 
-![image-2.png](learn_files/image-2.png)
+![image-2.png](cvlearn_files/image-2.png)
 
 根据上述运算，每一个像素点的滤波都可以视为与一个内部值均为$1/25$的5x5的矩阵相乘（并不是矩阵乘法，其实叫做卷积运算）得到均值滤波的计算结果。
 
-![image-3.png](learn_files/image-3.png)
-![image-4.png](learn_files/image-4.png)
+![image-3.png](cvlearn_files/image-3.png)
+![image-4.png](cvlearn_files/image-4.png)
 
 在OpenCV中，右侧的矩阵称为卷积核，其一般形式为  
-![image-5.png](learn_files/image-5.png)  
+![image-5.png](cvlearn_files/image-5.png)  
 其中，M和N分别表示卷积核的行数和列数，一般M和N是相等的，且为奇数，例如3x3、5x5、7x7等。
 
 #### 函数语法
@@ -769,7 +771,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_40_0.png)
+![png](cvlearn_files/cvlearn_40_0.png)
     
 
 
@@ -778,12 +780,12 @@ plt.show()
 ### 高斯滤波
 高斯滤波是一种线性平滑滤波方法，它使用高斯函数作为卷积核，对图像进行平滑处理。高斯滤波的主要优点是可以有效去除高斯噪声，保留图像的边缘和细节信息。
 在高斯滤波中，会将邻近中心像素点的权重值加大，远离中心像素点的权重值减小，在此基础上计算邻域内各像素值不同权重的和。  
-![image.png](learn_files/image.png)  
+![image.png](cvlearn_files/image.png)  
 高斯卷积示例图  
-![image-2.png](learn_files/image-2.png)  
+![image-2.png](cvlearn_files/image-2.png)  
 - 高斯滤波的卷积核的**宽度和高度**可以不同，但是它们必须都是奇数
 - 每一种尺寸的卷积核都可以有不同形式的权重比  
-![image-3.png](learn_files/image-3.png)
+![image-3.png](cvlearn_files/image-3.png)
 
 #### 函数语法
 `dst=cv2.GaussianBlur(src, ksize, sigmaX, sigmaY, borderType)`
@@ -832,14 +834,13 @@ plt.show()
 
 
     
-![png](learn_files/learn_42_0.png)
+![png](cvlearn_files/cvlearn_42_0.png)
     
 
 
 ### 中值滤波
 中值滤波是一种非线性滤波方法，它使用邻域内像素值的中值来代替中心像素点的像素值。中值滤波的主要优点是可以有效去除椒盐噪声，保留图像的边缘和细节信息。  
 >椒盐噪声是一种常见的图像噪声类型，它表现为图像中随机分布的黑白像素点。这些像素点通常是由于图像采集或传输过程中的干扰引起的，例如传感器故障、信号干扰等。椒盐噪声会导致图像中出现明显的亮点和暗点，降低图像的质量和清晰度。  
-
 中值滤波会取当前像素点及其周围邻近像素点(通常取奇数个像素点，类似于董事会设置奇数个成员，以免出现平局，方便判断投票结果)的像素值，先将这些像素值排序，然后将位于中间位置的像素值作为当前像素点的像素值。    
 
 
@@ -886,7 +887,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_44_0.png)
+![png](cvlearn_files/cvlearn_44_0.png)
     
 
 
@@ -894,12 +895,12 @@ plt.show()
 形态学操作是图像处理中的一种基本操作，主要用于图像的预处理和后处理。形态学操作主要包括腐蚀、膨胀、开运算、闭运算、形态学梯度、顶帽和黑帽等。形态学操作可以用于图像的去噪、分割、轮廓提取、图像增强等。
 ### 腐蚀
 腐蚀是一种形态学操作，用于缩小或消除图像中的白色区域。能够消除图像的边界点，使图像沿着边界向内收缩。腐蚀操作会将卷积核覆盖区域内的所有像素点的像素值设置为卷积核内像素点的最小值。腐蚀操作可以用于去除图像中的噪声、分离图像中的连通区域、检测图像中的边缘等。左图是原始图像，右图是对其腐蚀的处理结果。  
-![image.png](learn_files/image.png)
+![image.png](cvlearn_files/image.png)
 
 在腐蚀过程中，通常使用一个结构元来逐个像素点地扫描图像，当结构元的中心与图像的像素点重合时，将结构元的所有像素点与图像的像素点进行逐个比较
 - 如果结构元的所有像素点全部处于前景对象中，则将该像素点的像素值设置为前景色（白色，像素值为1）
 - 如果不完全处于或完全不处于前景对象中，设置为背景色（黑色，像素值为0）。  
-![image-2.png](learn_files/image-2.png)
+![image-2.png](cvlearn_files/image-2.png)
 
 #### 函数语法
 `dst=cv2.erode(src, kernel, anchor, iterations, borderType, borderValue)`
@@ -937,7 +938,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_46_0.png)
+![png](cvlearn_files/cvlearn_46_0.png)
     
 
 
@@ -945,10 +946,10 @@ plt.show()
 
 ### 膨胀
 膨胀是一种形态学操作，用于扩大或增强图像中的白色区域。能够消除图像的边界点，使图像沿着边界向外扩张。膨胀操作会将卷积核覆盖区域内的所有像素点的像素值设置为卷积核内像素点的最大值。膨胀操作可以用于填充图像中的空洞、连接图像中的断裂区域、检测图像中的边缘等。左图是原始图像，右图是对其膨胀的处理结果。  
-![image.png](learn_files/image.png)  
+![image.png](cvlearn_files/image.png)  
 - 如果结构元中任意一点处于前景对象中，就将膨胀结果图像中对应像素点处理为前景色。
 - 如果结构元完全处于背景对象外，就将膨胀结果图像中对应像素点处理为背景色。  
-![image-2.png](learn_files/image-2.png)
+![image-2.png](cvlearn_files/image-2.png)
 
 #### 函数语法
 `dst=cv2.dilate(src, kernel, anchor, iterations, borderType, borderValue)`
@@ -980,7 +981,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_48_0.png)
+![png](cvlearn_files/cvlearn_48_0.png)
     
 
 
@@ -1016,7 +1017,7 @@ plt.show()
 
 
     
-![png](learn_files/learn_49_0.png)
+![png](cvlearn_files/cvlearn_49_0.png)
     
 
 
@@ -1077,6 +1078,6 @@ plt.show()
 
 
     
-![png](learn_files/learn_51_0.png)
+![png](cvlearn_files/cvlearn_51_0.png)
     
 
