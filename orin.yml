@@ -165,7 +165,7 @@ article:
     # auto generate excerpt if not exist
     auto_excerpt: true # false, true
     # hide excerpt
-    hide_excerpt: false
+    hide_excerpt: true
     # show split line or not
     line_style: dotted # hidden, solid, dashed, dotted
     # show author
@@ -1315,6 +1315,7 @@ structured_data:
       width: 192
       height: 192
 ############################### Structured Data ############################### > end
+
 
 
 

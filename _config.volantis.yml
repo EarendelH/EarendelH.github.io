@@ -4,7 +4,7 @@ info:
   theme_docs: https://volantis.js.org/ # This is theme's URL.
   theme_repo: https://github.com/volantis-x/hexo-theme-volantis
 # Debug 调试模式
-debug: false # false: 关闭调试模式， env：环境配置检查， pjax：调试pjax，rightMenus: 调试右键
+debug: env # false: 关闭调试模式， env：环境配置检查， pjax：调试pjax，rightMenus: 调试右键
 ############################### 默认占位图 ###############################
 default:
   avatar: volantis-static/media/placeholder/avatar/round/3442075.svg # https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/avatar/round/3442075.svg
@@ -83,7 +83,7 @@ scroll_smooth: true
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img:  # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: #volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon: /images/authoricon.jpg
     title: EarendelH の 小窝
   menu:
@@ -108,8 +108,6 @@ navbar:
     - name: 网址收藏
       icon: fa-solid fa-bookmark
       url: links/
-    # - name: 背景音乐
-    #   icon: fa-solid fa-compact-disc
   search: WHAT DO YOU WANT TO KNOW?   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
@@ -121,9 +119,10 @@ cover:
   display:
     home: true
     archive: true
-    others: true # can be written in front-matter 'cover: true'
-  background: /images/background.png
+    others: false # can be written in front-matter 'cover: true'
+  #background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+  background: /images/background.png
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'Earendel の 小窝'
   subtitle: '寄系帕鲁日记'
@@ -133,14 +132,6 @@ cover:
       icon: fa-solid fa-home
       img: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f3e0.svg
       url: /
-    # - name: 文档
-    #   icon: #
-    #   img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-    #   url: /v4/getting-started/
-    # - name: 帮助
-    #   icon: #
-    #   img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-    #   url: faqs/
     - name: Github 
       icon: fab fa-github
       img: /images/authoricon.jpg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
@@ -159,15 +150,15 @@ article:
   preview:
     scheme: landscape # landscape
     # pin icon for post
-    pin_icon: https://avatars.githubusercontent.com/u/140391405?s=400&u=91b9290cf513bad2fcbb87d7a88ca07558845e98&v=4 # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    pin_icon: volantis-static/media/twemoji/assets/svg/1f4cc.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
     # auto generate title if not exist
     auto_title: true # false, true
     # auto generate excerpt if not exist
     auto_excerpt: true # false, true
     # hide excerpt
-    hide_excerpt: true
+    hide_excerpt: false
     # show split line or not
-    line_style: dotted # hidden, solid, dashed, dotted
+    line_style: solid # hidden, solid, dashed, dotted
     # show author
     author: true # true, false
     # show readmore button
@@ -176,7 +167,7 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author,date,category,counter] #启用评论数量需在此添加
+    top_meta: [author, category, date, counter] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -257,7 +248,7 @@ article:
       # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
       # https://volantis.js.org/advanced-settings/#多人协同
       author:
-        avatar: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/apple-touch-icon.png
+        avatar: /images/authoricon.jpg
         name: EarendelH
         url: https://github.com/EarendelH/
       # 文章创建日期
@@ -296,16 +287,16 @@ article:
       share:
         - id: qq
           img:  volantis-static/media/org.volantis/logo/128/qq.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png
+        - id: qzone
+          img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
         - id: wechat
           img:  volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
-        # - id: qzone
-        #   img: volantis-static/media/org.volantis/logo/128/qzone.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png
-        # - id: weibo
-        #   img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
-        # - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
-        #   img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
-        # - id: # telegram
-        #   img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
+        - id: weibo
+          img: volantis-static/media/org.volantis/logo/128/weibo.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png
+        - id: # qrcode # 当id为qrcode时需要安装插件  npm i hexo-helper-qrcode
+          img: # volantis-static/media/org.volantis/logo/128/wechat.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/wechat.png
+        - id: # telegram
+          img: # volantis-static/media/org.volantis/logo/128/telegram.png #  https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/telegram.png
 ############################### Article Layout ############################### > end
 
 
@@ -499,21 +490,25 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: /images/authoricon.jpg # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: /images/authoricon.jpg
       shape: rectangle # circle, rectangle
       url: /about/
       title: Earendel
       subtitle: 一名大一小萌新
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon:
-        - icon:
+        # - icon: fa-solid fa-rss
+        #   url: /atom.xml
+        # - icon: fa-solid fa-envelope
+        #   url: mailto:me@xxx.com
+        # - icon: fab fa-github
+        #   url: https://github.com/volantis-x/
+        # - icon: fa-solid fa-headphones-alt
+        #   url: /
         - icon: fa-solid fa-envelope
           url: mailto:1048872982@qq.com
         - icon: fab fa-github
           url: https://github.com/EarendelH/
-        - icon:
-        - icon:
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -562,8 +557,8 @@ sidebar:
       display: [desktop, mobile] # [desktop, mobile]
       height: 64px  # Automatic height if not set
       images:
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - volantis-static/media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # ---------------------------------------
     # webinfo widget
     webinfo:
@@ -578,7 +573,7 @@ sidebar:
           text: '文章数目：'
           unit: '篇'
         runtime:
-          enable: true
+          enable: false
           data: '2024/03/13'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
@@ -587,11 +582,12 @@ sidebar:
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
-          enable: true
           siteuv:
+            enable: false
             text: '本站访客数：'
             unit: '人'
           sitepv:
+            enable: false
             text: '本站总访问量：'
             unit: '次'
         lastupd:
@@ -648,7 +644,7 @@ site_footer:
     <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2017 XXX](/)'
+  copyright: '[Copyright © since 2023 XXX](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -768,7 +764,7 @@ plugins:
   # 视差滚动效果 Slide Background
   parallax:
     enable: true
-    position: fixed      # cover: sticky on the cover.   fixed: Fixed as background for the site.
+    position: fixed       # cover: sticky on the cover.   fixed: Fixed as background for the site.
     shuffle: true         # shuffle playlist
     duration: 10000       # Duration (ms)
     fade: 1500            # fade duration (ms) (Not more than 1500)
@@ -817,7 +813,7 @@ plugins:
   #   icon: fa-solid fa-moon # 可自定义
   #   toggle: darkmode
   darkmode:
-    enable: true
+    enable: #true
 
   # 旧版 Internet Explorer 淘汰行动
   # https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support
@@ -886,7 +882,7 @@ plugins:
     time:     # 默认持续时间
       default: 5000
       quection: 20000
-    position: 'bottomRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
+    position: 'topRight'                 # 弹出位置 可选值：topRight, bottomRight, bottomLeft, topLeft, topCenter, bottomCenter, center
     transitionIn: 'bounceInLeft'         # 弹窗打开动画 可选值：bounceInLeft, bounceInRight, bounceInUp, bounceInDown, fadeIn, fadeInDown, fadeInUp, fadeInLeft, fadeInRight, flipInX
     transitionOut: 'fadeOutRight'        # 弹窗关闭动画 可选值：fadeOut, fadeOutUp, fadeOutDown, fadeOutLeft, fadeOutRight, flipOutX
     titleColor: 'var(--color-text)'      # 标题颜色
@@ -1017,6 +1013,7 @@ rightmenus:
       # - {id: 'contributors', name: '加入社区', icon: 'fa-solid fa-fan', link: 'https://volantis.js.org/contributors/', group: 'link'}
       # - hr
       - {id: 'source_docs', name: '本站源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/EarendelH/EarendelH.github.io', group: 'link'}
+      - hr
       # - {id: 'source_theme', name: '主题源码', icon: 'fa-solid fa-code-branch', link: 'https://github.com/volantis-x/hexo-theme-volantis/', group: 'link'}
     darkMode:
       - {id: 'darkMode', name: '暗黑模式', icon: 'fa-solid fa-moon', event: 'volantis.dark.toggle()', group: 'darkMode'}
@@ -1060,7 +1057,7 @@ rightmenu:
   source_docs:
     name: 本站源码
     icon: fa fa-code-branch
-    url: https://github.com/EarendelH/
+    url: https://github.com/EarendelH/EarendelH.github.io
   # source_theme:
   #   name: 主题源码
   #   icon: fa fa-code-branch
@@ -1184,7 +1181,7 @@ color_scheme:
 ############################### Custom css ############################### > start
 custom_css:
   cursor:
-    enable: true
+    enable: #true
     text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
     pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
     default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
@@ -1196,17 +1193,17 @@ custom_css:
   max_width: 1080px # Sum of body width and sidebar width (This limit will be exceeded when the device width is greater than 2000px, reaching 75% of the total width)
   scrollbar:
     size: 4px
-    border: 4px
+    border: 2px
     background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
     hover_background: rgb(84,181,160) linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent)
   navbar:
     height: 64px
     width: auto # auto, max
-    effect: [floatable] # [shadow, floatable, blur]
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   sidebar:
     effect: [shadow, floatable, blur] # [shadow, floatable, blur]
   body:
-    effect: [shadow, floatable] # [shadow, floatable, blur]
+    effect: [shadow, floatable, blur] # [shadow, floatable, blur]
     highlight:
       language: true # show language of codeblock
       grayscale: false # Enable grayscale effect
@@ -1254,10 +1251,10 @@ custom_css:
       style: normal
     codefont:
       fontfamily: 'Menlo, UbuntuMono, Monaco'
-      name: 'Monaco'
-      url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
-      weight: normal
-      style: normal
+      # name: 'Monaco'
+      # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
+      # weight: normal
+      # style: normal
 ############################### Custom css ############################### > end
 
 
@@ -1289,7 +1286,7 @@ seo:
 # https://ogp.me/
 # https://hexo.io/zh-cn/docs/helpers#open-graph
 open_graph:
-  image: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+  image: /images/authoricon.jpg
   twitter_card: summary # summary_large_image , summary
   #twitter_id:
   #twitter_site:
@@ -1311,19 +1308,7 @@ structured_data:
       sns:
         - https://github.com/volantis-x
     logo:
-      path: /images/authoricon.jpg # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+      path: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
       width: 192
       height: 192
 ############################### Structured Data ############################### > end
-
-
-
-
-
-
-
-
-
-
-
-
