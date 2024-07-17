@@ -1,26 +1,37 @@
 ---
-title: Mathematical Logic
-date: 2024-05-13 00:47:45
+title: Mathematical Logic [Lec02 Preliminaries]
+date: 2024-05-13 00:47:02
 tags:
+cover : true
+plugins: 
+    - mathjax
 ---
+CS 210: Mathematical Logic Notes
+
+<!-- more -->
+
 # Preliminaries(预备知识)
+
 - **set**集合
-- #words intension::内涵
+
+- intension:内涵
   The intension of a set is its description or defining properties, i.e., what is true about members of a set. (对概念的定义)
-- #words extension::外延
+- extension:外延
   The extension of a set is its members or contents. (概念所代表的对象)
 - $\mathbb{P}$= Prime numbers 质数
 - 外延原理：
-  The two sets A and B are equal (A = B) if and only if A and B have the same members.
-  ![[assets/Pasted image 20240502174046.png]]
+  	The two sets A and B are equal (A = B) if and only if A and B have the same members.
+
+![image](img1.png)
+
 - 集合中可以重复，且无序。
-  ![[assets/Pasted image 20240502174136.png]]
+![](img2.png)
 - subset：子集
   Proper subset 真子集
   **Power set 幂集**：含有该集合的所有子集
-  ![[assets/Pasted image 20240502174301.png]]
+![image](img3.png)
 - set operations 
-  ![[assets/Pasted image 20240502174502.png]]
+![image](img4.png)
 - **n-tuples**:有序n元组
 	  在数理中，tuple 是一个有限元素且有序的数组集合
 	- tuple may contain multiple instances of the same element, (1,2,2,3)$\ne$(1,2,3)
@@ -31,15 +42,15 @@ tags:
 	- $A \times B$ denotes the Cartesian product (笛卡尔积) of set A and B: : {⟨x, y⟩ | x ∈ A and y ∈ B} (the set of all ordered pairs where x is in A and y is in B.)
 	- The statement $⟨x, y⟩ ∈ R$ reads ”x is R-related to y”, and is denoted by $R(x, y)$ or $xRy$.
   
-  	![[assets/Pasted image 20240502175851.png]]
+![](img5.png)
 - **n-ary relation**多元关系
-	![[assets/Pasted image 20240502175948.png]]
+	![](img6.png)
 ## Equivalence Relation 
 - **Equivalence Relation**等价关系
 	- 如果R是一个等价关系，R要满足三个性质：reflexive(自反)、symmetric(对称)、transitive(传递)。
-		![[assets/Pasted image 20240502180341.png]]
+![](img7.png)
 	- 比如说“=”关系就是最基本的等价关系
-	![[assets/Pasted image 20240502180632.png]]
+![](img8.png)
 - **Equivalence Relation**等价类
 	- 对于集合A上的等价关系R，元素x的等价类为$$
 		  [x]_{R} \{ \gamma \in A | xRy \}$$$[x]_{R}$ 是集合A中所有等价于x的元素
@@ -56,14 +67,16 @@ tags:
 	- antisymmetric 反对称的
 		- for all x, y ∈ A，if xRy and yRx, then x=y.
 	- transitive 传递
-![[assets/Pasted image 20240502183111.png]]
+![](img9.png)
 - 一个有意思的例子
 	- The binary relation ”x is divisible by y” on the set of positive integers is a partial order. It has no minimal elements, and 1 is a maximal element.
 	  这很好的说明偏序关系中的“大小关系”与“数值大小”无关
 	- 对于上面这个例子，可以联系化学中的“广度量 extensive properties”和“强度量 intensive properties”的概念,偏序关系是一种强度量
+
 ## Total Order relation
+
 **Total Order Relation**全序关系
-![[assets/Pasted image 20240502183940.png]]
+![](img10.png)
 - 全序关系（Total Order Relation），也称为全序或线性序，是数学中的一个概念，用于描述集合中元素之间是否可以完全排序，即对于任意两个元素，我们总是可以确定一个元素是大于还是小于另一个元素。
 ### 定义
 一个二元关系  R定义在集合 A 上，如果满足以下三个条件，则称  R 是一个全序关系：
@@ -82,16 +95,16 @@ tags:
 
 ### 小于不是偏序关系，也不是全序关系，是严格偏序关系
 ## Functions 
-![[assets/Pasted image 20240502184934.png]]
+![](img11.png)
 - domain 定义域
 - codomain 陪域，上域
 - range 值域
-![[assets/Pasted image 20240502185154.png]]
-- #words injective::单射或一一映射
-- #words Surjective::满射
-- #words bijective::双射
-![[assets/Pasted image 20240502185341.png]]
-#words rigorously::严格地
+![](img12.png)
+-  injective:单射或一一映射
+-  Surjective:满射
+-  bijective:双射
+![](img13.png)
+ rigorously:严格地
 ## 4 Mathematical Definitions & Proof
 - Inductive Definition (归纳定义)
 	- 归纳定义通常包含两个主要部分：

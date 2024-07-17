@@ -1,27 +1,34 @@
 ---
-title: Mathematical Logic
-date: 2024-05-13 00:47:45
+title: Mathematical Logic [Lec08 Resolution]
+date: 2024-05-13 00:47:08
 tags:
+cover : true
+plugins: 
+    - mathjax
 ---
+CS 210: Mathematical Logic Notes
+
+<!-- more -->
+
 ## Resolution 归结系统
 是一种用于自动定理证明的逻辑推理规则
 ### Normal form 范式
 1. **合取范式（Conjunctive Normal Form, CNF）**：为了应用归结推理，逻辑公式通常需要转换为合取范式，即多个子句的合取（$\land$）。
 2. **析取范式（Disjunctive Normal Form, DNF）**：与之相应的，为多个子句的析取（$\lor$）。
-3. ![[assets/Pasted image 20240504213232.png]]
+3. ![image](img1.png)
 ### Literal 单式/文字
-![[assets/Pasted image 20240504213140.png]]
+![image](img2.png)
 ### Clause子式/子句
-![[assets/Pasted image 20240504213218.png]]
-![[assets/Pasted image 20240504213451.png]]
+![image](img3.png)
+![image](img4.png)
 >任何Propositional language都可以表示成CNF和DNF 
 
 ### 转换成CNF 和DNF 的方法
-![[assets/Pasted image 20240504213707.png]]
+![image](img5.png)
 ps:2.的第三行的最后一个$\land$应该为$\lnot$ 
 
 ### 主合取/析取范式
-![[assets/Pasted image 20240504213903.png]]
+![image](img6.png)
 #### 主合取范式 (PCNF)
 
 主合取范式是合取范式的一个特例，其中每个合取项（conjunct）都是一个或多个不同的原子公式的合取。换句话说，PCNF 中的每个子句都不包含重复的原子公式或其否定。
@@ -41,17 +48,17 @@ ps:2.的第三行的最后一个$\land$应该为$\lnot$
 - **转换**：任何逻辑表达式都可以转换为等价的 PCNF 或 PDNF，尽管这种转换可能会增加表达式的复杂性。
 
 ## Resolution归结/消解原理
-![[assets/Pasted image 20240504214416.png]]
+![image](img7.png)
 ### Inference rules
 
 
 1. 通过归结原理合并：因为p和$\lnot$p矛盾，所以可以推出$\alpha\lor\beta$ 
-   ![[assets/Pasted image 20240504215500.png]]
+   ![image](img8.png)
 2. Unit Resolution
-   ![[assets/Pasted image 20240504215704.png]]
-3. ![[assets/Pasted image 20240504215717.png]]
+   ![image](img9.png)
+3. ![image](img10.png)
 ### The Resolution Proof Procedure 
-![[assets/Pasted image 20240504220619.png]]
+![image](img11.png)
 1. 在Resolution系统中证明某命题，我们往往证明它的否命题可以推出矛盾
 2. 因为消解原理只能应用于析取子式，所以我们**首先将表达式转化为合取范式**
 3. 然后将CNF formulas 在$\land$ 处切分，得到clauses  
@@ -59,8 +66,8 @@ ps:2.的第三行的最后一个$\land$应该为$\lnot$
 	1. 找到了空子句，即矛盾（参考Inference rules 第三点）即证明了原命题
 	2. 无法再使用消解原理，那么我们得到结论**无法推导出原命题**
 ### Example 
-![[assets/Pasted image 20240504221632.png]]
-![[assets/Pasted image 20240504221638.png]]
-![[assets/Pasted image 20240504221647.png]]
+![image](img12.png)
+![image](img13.png)
+![image](img14.png)
 
 
