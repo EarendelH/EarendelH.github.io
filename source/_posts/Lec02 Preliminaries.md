@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec02 Preliminaries]
 date: 2024-05-13 00:47:02
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

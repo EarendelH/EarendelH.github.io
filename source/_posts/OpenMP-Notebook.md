@@ -2,7 +2,8 @@
 title: OpenMP Notebook
 date: 2024-03-13 00:47:45
 tags:
-cover : true
+cover : false
+categories : HPC
 ---
 OpenMP 赵学长培训笔记
 

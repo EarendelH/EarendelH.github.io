@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec05 Entailment]
 date: 2024-05-13 00:47:05
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

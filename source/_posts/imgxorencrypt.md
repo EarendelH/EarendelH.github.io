@@ -4,7 +4,8 @@ time : 2024-07-01 18:42:06
 tags:
      - Opencv
      - 计算机视觉
-cover : true
+cover : false
+categories : Computer Vision
 ---
 自学计算机视觉和深度学习的笔记，欢迎大佬们指正
 <!-- more -->

@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec07 Natural Deduction System]
 date: 2024-05-13 00:47:07
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

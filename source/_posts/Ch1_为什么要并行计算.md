@@ -4,7 +4,8 @@ time : 2024-07-01 21:18:26
 tags:
     - OpenMP
     - 并行计算
-cover : true
+cover : false
+categories : HPC
 ---
 《并行程序设计导论》读书笔记，记录一些重要的知识点，以及一些自己的理解。 
 

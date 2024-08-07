@@ -1,7 +1,11 @@
 ---
 title: About me
-date: 2024-04-22 11:48:33
-type: about
+layout: docs
+seo_title: 关于
+bottom_meta: false
+sidebar: []
+twikoo:
+  placeholder: 有什么想对我说的呢？
 ---
 
-This is a personal blog. I write about things that interest me. I hope you find something you like here. If you have any questions or comments, feel free to contact me.
+This is a personal blog. I write about things that interest me. I hope you can find something you like. If you have any questions or comments, feel free to contact me.

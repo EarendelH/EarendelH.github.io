@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec01 Leading]
 date: 2024-05-13 00:47:01
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

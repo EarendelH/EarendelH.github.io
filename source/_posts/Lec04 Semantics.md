@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec04 Semantics]
 date: 2024-05-13 00:47:04
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

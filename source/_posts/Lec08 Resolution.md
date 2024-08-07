@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec08 Resolution]
 date: 2024-05-13 00:47:08
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

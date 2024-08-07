@@ -2,7 +2,8 @@
 title: Mathematical Logic [Lec06 Proof Systems and Hilbert-style]
 date: 2024-05-13 00:47:06
 tags:
-cover : true
+cover : false
+categories : Logic Math
 plugins: 
     - mathjax
 ---

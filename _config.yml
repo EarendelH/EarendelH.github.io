@@ -107,9 +107,33 @@ favicon: /images/favicon.ico
 
 ######################  volantis  ############################
 
+######################live2d######################
+live2d :
+  enable: true # 是否开启live2d
+  scriptFrom: local ## 脚本从本地引入
+  pluginRootPath: live2dw/ # 模型根目录(指hexo g后生成public\live2dw文件名)
+  pluginJsPath: lib/ # 依赖js的文件夹名(public\live2dw\lib)
+  pluginModelPath: assets/ # 模型存放目录(public\live2dw\assets)
+  tagMode: false # 标记模式(未知) 
+  log: false # 日志
+  model: # 模型
+    use: weier # 使用的模型名称
+  display: # 显示
+    position: left # 显示在右边(left显示在左边)
+    width: 200 # 宽度
+    height: 500 # 高度
+  mobile:
+    show: false # 手机端是否显示
+  react:
+    opacity: 1 # 透明度
+
+######################live2d######################
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repository: git@github.com:EarendelH/EarendelH.github.io.git
   branch: main
+
