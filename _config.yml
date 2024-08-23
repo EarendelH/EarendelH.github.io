@@ -127,6 +127,13 @@ live2d :
   react:
     opacity: 1 # 透明度
 
+word_count: true
+# leancloud_counter:
+#   enable: true
+#   app_id: AfZXFcLLONcC8vMj1xggWBpq-gzGzoHsz
+#   app_key: 55osgZy3LQyJKjFBQx2XB8ro
+#   master_key: # (可选) master key
+
 ######################live2d######################
 
 

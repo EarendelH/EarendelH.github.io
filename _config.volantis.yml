@@ -509,6 +509,10 @@ sidebar:
           url: mailto:1048872982@qq.com
         - icon: fab fa-github
           url: https://github.com/EarendelH/
+        - icon: fab fa-google
+          url : mailto:earendelh@google.com
+        - icon: fa-solid fa-n
+          url: https://earendelh.notion.site/Earendel-s-dashboard-fc9b8ffb587d4b1daaa7803f97fdc76d?pvs=4
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -578,7 +582,7 @@ sidebar:
           text: '已运行时间：'
           unit: '天'
         wordcount:
-          enable: false
+          enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
@@ -627,7 +631,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, analytics, info, copyright]
+  layout : [aplayer,license,copyright]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -640,11 +644,11 @@ site_footer:
   # site source
   source: https://github.com/volantis-x/volantis-docs/
   # analytics using leancloud
-  analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+  analytics: 
+    <span id="busuanzi_container_site_pv">本站访问量为<span id='busuanzi_value_site_pv'></span> 次</span>
     <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2023 XXX](/)'
+  copyright: '[Copyright © since 2023]'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -1261,11 +1265,12 @@ custom_css:
 
 
 ############################### Analytics ############################### > start
+
 analytics:
-  busuanzi: #volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  busuanzi: volantis-static/libs/busuanzi/js/busuanzi.pure.mini.js #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud: # 请使用自己的 id & key 以防止数据丢失
-    app_id: # u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI
-    app_key: # jfHtEKVE24j0IVCGHbvuFClp
+    app_id: #AfZXFcLLONcC8vMj1xggWBpq-gzGzoHsz
+    app_key: #55osgZy3LQyJKjFBQx2XB8ro
     custom_api_server: # 国际版一般不需要写，除非自定义了 API Server
 ############################### Analytics ############################### > end
 
