@@ -1,0 +1,22 @@
+- group: cjer
+  title:  # 分组标题
+  description:  # 分组描述
+  items:
+    - title: WOYO-I-SLLH
+      avatar: /images/friends/WOYO-I-SLLH.png
+      url: https://woyo-i-sllh.github.io/
+      screenshot: /images/friends/WOYO-I-SLLH_shot.png
+      keywords: # 关键词
+      description: "我觉得对于人类、以及对于生物来说，逃避讨厌的事是理所当然的，而这一点并不被认可也让我感觉有些疑惑。\n我觉得不应该去责备从现状中离开的人。应该责备的，是责备离去的人的风潮。"
+    - title: Cine Philia
+      avatar: /images/friends/Cine Philia.png
+      url: https://notes.yanjinli.fun/
+      screenshot: # 截图
+      keywords: # 关键词
+      description: Wubba lubba dub dub. Gubba nub nub doo rah kah.
+    - title : 小登王
+      avatar: /images/friends/xiaodengwang.jpeg
+      url : https://xiaodengwang01.github.io/
+      screenshot: /images/friends/xiaodengwang_shot.png
+      description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nFusce eget urna vitae velit eleifend interdum at ac nisi."
+    
