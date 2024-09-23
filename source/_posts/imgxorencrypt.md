@@ -9,7 +9,7 @@ categories : Computer Vision
 ---
 自学计算机视觉和深度学习的笔记，欢迎大佬们指正
 <!-- more -->
-# 图像加密（Encryption）与解密（Decryption）xor 异或实现
+## 图像加密（Encryption）与解密（Decryption）xor 异或实现
 
 通过按位异或运算，可以实现图像的加密与解密。
 
