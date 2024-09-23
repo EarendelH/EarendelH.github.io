@@ -12,6 +12,7 @@ CS 210: Mathematical Logic Notes
 <!-- more -->
 
 ## FOL Syntax 一阶逻辑（First-Order Logic）句法
+
 - **domain ：论域**
   ![image](img1.png)
 - **constants ：常量**（我觉得理解为“元素”更好）
@@ -22,16 +23,22 @@ CS 210: Mathematical Logic Notes
   ![image](img4.png)
 - **Quantifiers:：量词**
   ![image](img5.png)
-- **Functions：函数符号** 
+- **Functions：函数符号**
   ![image](img6.png)
+
 ## FOL as a Formal language
-### Alphabet 
+
+### Alphabet
+
 1. ![image](img7.png)
 2. ![image](img8.png)
-### Syntax 
+
+### Syntax
+
 ![image](img9.png)
 
 ### Terms(项)
+
 ![image](img10.png)
 >terms are expressions referring to "objects"
 
@@ -39,14 +46,20 @@ CS 210: Mathematical Logic Notes
 - ![image](img12.png)
 - ![img](img13.png)
 
-### Atoms 
-![image](img14.png)
->Atomic formulas refer to properties or relations of objects 
+### Atoms
 
-### Formulas 
+![image](img14.png)
+>Atomic formulas refer to properties or relations of objects
+
+### Formulas
+
 ![image](img15.png)
+
 ### Precedence and Conventions
+
 ![image](img16.png)
-### Parse Trees 
+
+### Parse Trees
+
 ![image](img17.png)
 ![image](img18.png)

@@ -17,11 +17,11 @@ OpenMP 赵学长培训笔记
 #include <stdio.h>
 int main()
 {
-	#pragma omp parallel \\通知以下代码是OpenMp的指令和结构化块，也称为构造
- 	{ 
-	printf("Hello world \n");
- 	}
-	return 0;
+ #pragma omp parallel \\通知以下代码是OpenMp的指令和结构化块，也称为构造
+  { 
+ printf("Hello world \n");
+  }
+ return 0;
 }
 ```
 
@@ -93,7 +93,7 @@ int main() {
 ```c
 #prama omp parrallel for
 for(int i=1=0;i<n;i++){
-	...
+ ...
 }
 ```
 
@@ -141,7 +141,7 @@ return 0;
 
 ​![image](https://github.com/EarendelH/io_data/blob/main/img/image-20240310221552-r85jltz.png?raw=true)​
 
-原因：`parrallel`​为构造一个并行域 ，内层的`#pragma omp parallel for `​相当于利用一个线程再构造了一个并行域运行，  
+原因：`parrallel`​为构造一个并行域 ，内层的`#pragma omp parallel for`​相当于利用一个线程再构造了一个并行域运行，  
 在此处线程数为4时实际会运行 `4x16`​ 次`printf()`​
 
 ‍

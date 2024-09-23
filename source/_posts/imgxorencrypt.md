@@ -10,11 +10,13 @@ categories : Computer Vision
 自学计算机视觉和深度学习的笔记，欢迎大佬们指正
 <!-- more -->
 # 图像加密（Encryption）与解密（Decryption）xor 异或实现
+
 通过按位异或运算，可以实现图像的加密与解密。
 
 ![image.png](imgxorencrypt_files/image.png)
 
 ## 加密与解密原理
+
 |a|b|c(a xor b)|c xor b(=a)|c xor a(=b)|
 |-|-|-|-|-|
 |0|0|0|0|0|
@@ -27,17 +29,18 @@ categories : Computer Vision
 - c是密文，加密后的数据
 
 ## 图像整体加密与解密步骤
+
 ### 加密
+
 1. 二进制转换，将原始图像O和密钥图像W转换为二进制图像
 2. 加密，将原始图像O和密钥图像W进行异或运算，得到加密图像E
 3. 二进制转换，将加密图像E转换为十进制图像
 
 ### 解密
+
 1. 二进制转换，将加密图像E和密钥图像W转换为二进制图像
 2. 解密，将加密图像E和密钥图像W进行异或运算，得到解密图像D
 3. 二进制转换，将解密图像D转换为十进制图像
- 
-
 
 ```python
 # 异或加密解密程序示例
@@ -66,12 +69,7 @@ plt.show()
 
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_1_0.png)
-    
-
-
 
 ```python
 # 图像加密解密程序示例2
@@ -103,12 +101,7 @@ plt.axis('off')
 plt.show()
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_2_0.png)
-    
-
-
 
 ```python
 # 图像加密解密程序示例3
@@ -140,23 +133,20 @@ plt.axis('off')
 plt.show()
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_3_0.png)
-    
-
 
 > 由此可见，选择适当的加密图像是非常重要的
 
 ## 脸部打码与解码
+
 ### 打码（掩膜方式实现）
+
 1. 按位异或运算，原始图像violet和密钥图像key进行异或运算，得到加密图像violetXorKey
 2. 按位与运算，图像violetXorKey与掩膜图像mask进行与运算，得到脸部打码图像encryptFace
 3. 按位与运算，原始图像violet与掩膜图像l-mask（与mask相反的掩膜图像）进行与运算，得到无脸部的图像noface
 4. 加法运算，无脸部的图像noface与脸部打码图像encryptFace进行加法运算，得到最终打码图像encryptViolet
 
 ![image.png](imgxorencrypt_files/image.png)
-
 
 ```python
 # 脸部打码
@@ -205,20 +195,16 @@ plt.show()
 
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_6_0.png)
-    
-
 
 ### 解码（掩膜方式实现）
+
 1. 按位异或运算，脸部打码图像encryptViolet和密钥图像key进行异或运算，得到脸部为解码，其余区域为乱码的图像extractOriginal
 2. 按位与运算，脸部打码图像encryptViolet与掩膜图像mask进行与运算，得到脸部打码，其余位置为0的图像extractFace
 3. 按位与运算，原始图像violet与掩膜图像l-mask（与mask相反的掩膜图像）进行与运算，得到无脸部的图像noface
 4. 加法运算，无脸部的图像noface与脸部打码图像extractFace进行加法运算，得到最终解码图像extractViolet
 
 ![image.png](imgxorencrypt_files/image.png)
-
 
 ```python
 # 脸部解码
@@ -255,13 +241,10 @@ plt.axis('off')
 plt.show()
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_8_0.png)
-    
-
 
 ### 打码（ROI方式实现）
+
 ROI指感兴趣区域，roi指具体的一幅图像，表现为矩形框，roi的大小和位置可以通过矩形框的左上角和右下角坐标来确定。
 
 1. 按位异或运算，原始图像violet和密钥图像key进行异或运算，得到加密图像violetXorKey
@@ -270,7 +253,6 @@ ROI指感兴趣区域，roi指具体的一幅图像，表现为矩形框，roi�
 4. ROI替换，将secretFace替换到violet的roi区域，得到最终打码图像encryptViolet
 
 ![image.png](imgxorencrypt_files/image.png)
-
 
 ```python
 # 脸部打码ROI
@@ -306,11 +288,7 @@ plt.axis('off')
 plt.show()
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_10_0.png)
-    
-
 
 在 Python 的 OpenCV 或 NumPy 库中，当使用切片操作（如`roi = violet[200:500, 250:550]`）来选择图像的一部分时，得到的 roi 实际上是原始 violet 数组的一个视图，而不是一个副本。这意味着，roi 和 violet 共享相同的数据缓冲区。因此，如果修改 violet 中的任何值，那么 roi 中相应的值也会发生变化，反之亦然。
 
@@ -320,12 +298,12 @@ plt.show()
 这样，roi 就是一个独立于 violet 的新数组，对 roi 的任何修改都不会影响到 violet。
 
 ### 解码（ROI方式实现）
+
 1. 按位异或运算，脸部打码图像enface和密钥图像key进行异或运算，得到脸部为解码，其余区域为乱码的图像extractOriginal
 2. 获取ROI，获取解码脸所在区域。在extractOriginal中根据roi将已解码脸部区域提取出来，得到脸部图像extractFace
 3. ROI替换，将extractFace替换到enface的roi区域，得到最终解码图像extractViolet
 
 ![image.png](imgxorencrypt_files/image.png)
-
 
 ```python
 # 脸部解码ROI
@@ -366,8 +344,4 @@ plt.axis('off')
 plt.show()
 ```
 
-
-    
 ![png](imgxorencrypt_files/imgxorencrypt_13_0.png)
-    
-

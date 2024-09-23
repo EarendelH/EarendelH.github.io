@@ -12,6 +12,7 @@ CS 210: Mathematical Logic Notes
 <!-- more -->
 
 ## Natural Deduction System (ND)
+
 ![image](img1.png)
 ![image](img2.png)
 ![image](img3.png)
@@ -28,9 +29,12 @@ CS 210: Mathematical Logic Notes
 
 ![image](img10.png)
 ![image](img11.png)
-## Derived Rules 
+
+## Derived Rules
+
 1. ![image](img12.png)
-	$$\begin{align}
+ $$\begin{align}
+
 &3.\ p \qquad Assumption \\
 &4.\ q \qquad \rightarrow \mathrm{e}:1,3 \\
 &5.\ \perp \qquad \lnot \mathrm{i}:3,5

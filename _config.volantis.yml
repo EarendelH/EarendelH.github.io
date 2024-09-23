@@ -494,7 +494,7 @@ sidebar:
       shape: rectangle # circle, rectangle
       url: /about/
       title: Earendel
-      subtitle: 一名大一小萌新
+      subtitle: 一名大二小白
       jinrishici: false # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social: 
         # - icon: fa-solid fa-rss

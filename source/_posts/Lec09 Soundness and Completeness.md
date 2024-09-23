@@ -14,6 +14,7 @@ CS 210: Mathematical Logic Notes
 对于一个证明系统，最重要的是**可靠性Soundness和完备性Completeness**
 ![image](img1.png)
 ![image](img2.png)
+
 ### 可靠性（Soundness）
 
 一个证明系统是可靠的，如果它从不证明假的命题。换句话说，如果该系统证明了某个命题，那么这个命题在所有可能的解释下都是真的。可靠性保证了证明系统的结论是有效的，即所有通过该系统得出的证明都是正确的。

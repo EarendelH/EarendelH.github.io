@@ -20,6 +20,7 @@ categories : Blogs
 git clone https://github.com/EarendelH/hpc-wiki.git
 cd hpc-wiki
 ```
+
 ## MkDocs的安装
 
 我这里使用的是pip安装，如果没有安装pip，可以参考[官方文档](https://mkdoc-material.llango.com/getting-started/)进行安装。
@@ -27,12 +28,15 @@ cd hpc-wiki
 ```bash
 pip install mkdocs-material
 ```
+
 ## MkDocs的初始化
 
 在当前目录下建立站点
+
 ```bash
 mkdocs new .
 ```
+
 这样就会在当前目录下生成一个mkdocs.yml文件和一个docs文件夹，docs文件夹下是我们的markdown文件。
 
 > 注意：如果你按照官方教程或网上的一些教程，他会让你使用`mkdocs new my-project`这样的命令，这样会在当前目录下生成一个my-project文件夹，里面是mkdocs.yml和docs文件夹，这样的话你需要把my-project文件夹下的内容拷贝到当前目录下，这样会比较麻烦,部署时也可能会导致404等问题。
@@ -69,13 +73,16 @@ git push
 ```bash
 mkdocs gh-deploy
 ```
+
 这样子在当前目录下就会生成一个site文件夹，其中包含了你的静态网站的所有文件，然后会自动将这个文件夹push到`gh-pages`分支上。
 
 现在的分支结构应该是这样的：
+
 ```bash
 * main
   gh-pages
 ```
+
 ![alt text](deploymkdocs/image-3.png)
 
 还没有完全结束，你需要在Github上的repository的Settings中找到Github Pages的设置，将Source设置为`deploy form a branch`，并将branch设置为`gh-pages`分支的docs文件夹。
