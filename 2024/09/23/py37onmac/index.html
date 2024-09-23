@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://earendelh.github.io/2024/08/26/线性规划模型/"/>
+  <link rel="canonical" href="https://earendelh.github.io/2024/09/23/py37onmac/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,22 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>线性规划模型 - EarendelH's Journal</title>
-  <meta name="keywords" content="数模,MATLAB,null">
-  <meta desc name="description" content="阅读数模培训PPT的笔记 - Earendel - EarendelH's Journal">
+  <title>在M1芯片的Mac上安装Python 3.7 - EarendelH's Journal</title>
+  <meta name="keywords" content="system,null">
+  <meta desc name="description" content="在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。 - Earendel - EarendelH's Journal">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="线性规划模型">
-<meta property="og:url" content="https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/index.html">
+<meta property="og:title" content="在M1芯片的Mac上安装Python 3.7">
+<meta property="og:url" content="https://earendelh.github.io/2024/09/23/py37onmac/index.html">
 <meta property="og:site_name" content="EarendelH&#39;s Journal">
-<meta property="og:description" content="阅读数模培训PPT的笔记">
+<meta property="og:description" content="在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://earendelh.github.io/images/authoricon.jpg">
-<meta property="article:published_time" content="2024-08-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-09-23T13:58:20.214Z">
+<meta property="article:published_time" content="2024-09-23T13:51:07.000Z">
+<meta property="article:modified_time" content="2024-09-23T14:18:56.694Z">
 <meta property="article:author" content="Earendel">
-<meta property="article:tag" content="数模">
-<meta property="article:tag" content="MATLAB">
+<meta property="article:tag" content="system">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://earendelh.github.io/images/authoricon.jpg">
   <style>
@@ -2560,7 +2559,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://earendelh.github.io/2024/08/26/线性规划模型/">
+  <link itemprop="mainEntityOfPage" href="https://earendelh.github.io/2024/09/23/py37onmac/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="EarendelH's Journal">
   </span>
@@ -2581,7 +2580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        线性规划模型
+        在M1芯片的Mac上安装Python 3.7
       </h1>
       <div class='new-meta-box'>
         
@@ -2600,10 +2599,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E6%95%B0%E6%A8%A1/">数模</a>
+    <a class="category-link" href="/categories/7788/">7788</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E6%95%B0%E6%A8%A1/" itemprop="url"><span itemprop="name">数模</span></a>
+        <a href="/categories/7788/" itemprop="url"><span itemprop="name">7788</span></a>
       </span>
     
   </div>
@@ -2612,10 +2611,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-08-26T00:00:00+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-23T21:51:07+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2024年8月26日</p>
+    <p>发布于：2024年9月23日</p>
   </a>
 </div>
 
@@ -2650,71 +2649,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>阅读数模培训PPT的笔记</p>
+    <p>在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。</p>
 <span id="more"></span>
-<h2 id="线性规划模型"><a href="#线性规划模型" class="headerlink" title="线性规划模型"></a>线性规划模型</h2><h3 id="例题1"><a href="#例题1" class="headerlink" title="例题1"></a>例题1</h3><p>任务分配问题:某车间有甲、乙两台机床，可用 于加工三种工件。假定这两台车床的可用台时数分别为800和 900，三种工件的数量分别为400、600和500，且已知用三种 不同车床加工单位数量不同工件所需的台时数和加工费用如 下表。问怎样分配车床的加工任务，才能既满足加工工件的 要求，又使加工费用最低?<br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-1.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"></p>
-<h2 id="线性规划模型一般形式"><a href="#线性规划模型一般形式" class="headerlink" title="线性规划模型一般形式"></a>线性规划模型一般形式</h2><p>目标函数+约束条件</p>
-<p>$$<br>    \min u&#x3D; c^T x<br>$$<br>$$<br>    \text { s.t.}<br>    \left \lbrace \begin{array}{ll}&amp;A x \leq b \\<br>    &amp; x \geq 0<br>    \end{array}<br>    \right.<br>$$</p>
-<h3 id="MATLAB实现"><a href="#MATLAB实现" class="headerlink" title="MATLAB实现"></a>MATLAB实现</h3><h4 id="linprog-函数"><a href="#linprog-函数" class="headerlink" title="linprog 函数"></a>linprog 函数</h4><p>linprog 是一个线性规划求解器，用于解决线性规划问题。它可以找到一组变量的最优解，使得目标函数达到最小值或最大值，同时满足一组线性约束条件。</p>
-<p>模型：</p>
-<p>$$<br>    \min z&#x3D;c^T x \\<br>    s.t. \left \lbrace \begin{array}{ll} A_{ub} x \leq b_{ub} \\<br>    A_{eq} x &#x3D; b_{eq} \\<br>    x \in bounds<br>    \end{array} \right.<br>$$</p>
-<p>使用方法：<br><code>result = linprog(c, A_ub, b_ub, A_eq, b_eq, bounds)</code><br><code>result = linprog(c, A_ub, b_ub, A_eq, b_eq, lb,ub[,x0])</code><br><code>[result, fval, exitflag, output] = linprog(...)</code></p>
-<p>参数说明：  </p>
-<ul>
-<li>c: 目标函数的系数向量</li>
-<li>A_ub: 不等式约束条件的系数矩阵</li>
-<li>b_ub: 不等式约束条件的右侧常数向量</li>
-<li>A_eq: 等式约束条件的系数矩阵</li>
-<li>b_eq: 等式约束条件的右侧常数向量</li>
-<li>bounds: 变量的取值范围</li>
-<li>lb,ub: 变量的下界和上界(不和bounds同时使用)</li>
-<li>x0: 变量的初始值(可选)</li>
-<li>fval: 目标函数的最优值</li>
-<li>exitflag: 求解器的退出标志</li>
-<li>output: 包含有关求解过程的信息的结构体</li>
-</ul>
-<p>返回值：</p>
-<ul>
-<li>result: 包含最优解和其他求解信息的对象</li>
-</ul>
-<blockquote>
-<p>注意：当求解条件为最大值时，传入linprog时将目标函数的所有系数取反即可，即</p>
-</blockquote>
-<p>$$<br>    \max z&#x3D;c^  T x \rightarrow \min z’&#x3D;(-c)^T x<br>$$<br><code>result = linprog(-c, A_ub, b_ub, A_eq, b_eq, bounds)</code></p>
-<p>示例：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 目标函数系数</span></span><br><span class="line">c = [<span class="number">-1</span>, <span class="number">-2</span>, <span class="number">-3</span>];  <span class="comment">% 求最大值时，目标函数系数取反</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% 不等式约束矩阵和向量</span></span><br><span class="line">A = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>; <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>];</span><br><span class="line">b = [<span class="number">1</span>; <span class="number">1</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">% 变量的边界</span></span><br><span class="line">lb = [<span class="number">0</span>; <span class="number">0</span>; <span class="number">0</span>];  <span class="comment">% 下界</span></span><br><span class="line">ub = [<span class="built_in">inf</span>; <span class="built_in">inf</span>; <span class="built_in">inf</span>];  <span class="comment">% 上界</span></span><br><span class="line"></span><br><span class="line"><span class="comment">% 调用 linprog 函数求解</span></span><br><span class="line">options = optimoptions(<span class="string">&#x27;linprog&#x27;</span>, <span class="string">&#x27;Display&#x27;</span>, <span class="string">&#x27;none&#x27;</span>);</span><br><span class="line">[x, fval, exitflag, output] = linprog(c, A, b, [], [], lb, ub, options);</span><br><span class="line"></span><br><span class="line"><span class="comment">% 输出结果</span></span><br><span class="line"><span class="built_in">disp</span>(<span class="string">&#x27;求解状态:&#x27;</span>);</span><br><span class="line"><span class="built_in">disp</span>(output.message);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">&#x27;最优解:&#x27;</span>);</span><br><span class="line"><span class="built_in">disp</span>(x);</span><br><span class="line"><span class="built_in">disp</span>(<span class="string">&#x27;最优值:&#x27;</span>);</span><br><span class="line"><span class="built_in">disp</span>(-fval);  <span class="comment">% 由于目标函数系数取反，最优值也需要取反</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="多目标线性规划模型"><a href="#多目标线性规划模型" class="headerlink" title="多目标线性规划模型"></a>多目标线性规划模型</h2><p>对于多目标线性规划模型，可以通过给定一个权重向量，将多个目标函数转化为一个目标函数，然后使用linprog函数求解。</p>
-<h3 id="例题2-1998年全国数学建模竞赛A题-投资的收益和风险"><a href="#例题2-1998年全国数学建模竞赛A题-投资的收益和风险" class="headerlink" title="例题2 1998年全国数学建模竞赛A题:投资的收益和风险"></a>例题2 1998年全国数学建模竞赛A题:投资的收益和风险</h3><p><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-2.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"></p>
-<p>一、基本假设</p>
-<ol>
-<li><p>投资数额M相当大，为了便于计算，假设M&#x3D;1；</p>
-</li>
-<li><p>投资越分散，总风险越小，收益越稳定；</p>
-</li>
-<li><p>总体风险用投资项目$s_i$中最大的一个来度量；</p>
-</li>
-<li><p>n种资产$s_i$之间是相互独立的；</p>
-</li>
-<li><p>在投资的这一时期，$r_i,p_i,q_i,r_0$为常数。</p>
-</li>
-<li><p>净收益和总体风险只受$r_i,p_r,q_i$的影响，不受其他因素影响。</p>
-</li>
-</ol>
-<p>二、符号规定  </p>
-<ol>
-<li>$s_i$表示第i种投资项目；</li>
-<li>$r_i，p_i,q_i$分别表示第i种投资项目的平均收益率，交易费率，风险损失率；</li>
-<li>$u_i$,$s_i$的交易定额</li>
-<li>$r_0$，同期银行利率</li>
-<li>$x_i$投资项目$s_i$的资金</li>
-<li>$a$投资风险度</li>
-</ol>
-<p>三、模型分析</p>
-<p><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-3.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-4.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-5.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-5.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-6.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-6.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"></p>
-<p>四、模型1的求解</p>
-<p><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-7.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-8.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-9.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"><br>五、结果分析</p>
-<p><img src="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-10.png" class="lazyload" data-srcset="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/image-10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="alt text"></p>
+<h2 id="问题重现"><a href="#问题重现" class="headerlink" title="问题重现"></a>问题重现</h2><h3 id="不使用python3-7"><a href="#不使用python3-7" class="headerlink" title="不使用python3.7"></a>不使用python3.7</h3><p>正常运行<code>conda create -n andrew python=3.12</code></p>
+<p>但运行<code>pip install -r requirements.txt</code>时报错：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">note: This error originates from a subprocess, and is likely not a problem with pip.</span><br><span class="line">  ERROR: Failed building wheel <span class="keyword">for</span> brotlipy</span><br><span class="line">  Running setup.py clean <span class="keyword">for</span> brotlipy</span><br><span class="line">  error: subprocess-exited-with-error</span><br><span class="line">  </span><br><span class="line">  × python setup.py clean did not run successfully.</span><br><span class="line">  │ <span class="built_in">exit</span> code: 1</span><br><span class="line">  ╰─&gt; [48 lines of output]</span><br><span class="line">      /opt/miniconda3/envs/andrew/lib/python3.12/site-packages/setuptools/__init__.py:94: _DeprecatedInstaller: setuptools.installer and fetch_build_eggs are deprecated.</span><br><span class="line">      !!</span><br><span class="line">      </span><br><span class="line">              ********************************************************************************</span><br><span class="line">              Requirements should be satisfied by a PEP 517 installer.</span><br><span class="line">              If you are using pip, you can try `pip install --use-pep517`.</span><br><span class="line">              ********************************************************************************</span><br><span class="line">      </span><br><span class="line">      !!</span><br><span class="line">        dist.fetch_build_eggs(dist.setup_requires)</span><br><span class="line">      Traceback (most recent call last):</span><br><span class="line">        ...</span><br><span class="line">      OSError: [Errno 66] Directory not empty: <span class="string">&#x27;/private/var/folders/d9/xx71dx5j1p3c9chqs2lkpnjw0000gn/T/pip-install-rd1_nl4f/brotlipy_0b7457beb8c24d688c53258e9d34cc1b/.eggs/cffi-1.17.1-py3.12-macosx-11.1-arm64.egg/cffi-1.17.1.dist-info&#x27;</span> -&gt; <span class="string">&#x27;/private/var/folders/d9/xx71dx5j1p3c9chqs2lkpnjw0000gn/T/pip-install-rd1_nl4f/brotlipy_0b7457beb8c24d688c53258e9d34cc1b/.eggs/cffi-1.17.1-py3.12-macosx-11.1-arm64.egg/EGG-INFO&#x27;</span></span><br><span class="line">      [end of output]</span><br><span class="line">  </span><br><span class="line">  note: This error originates from a subprocess, and is likely not a problem with pip.</span><br><span class="line">  ERROR: Failed cleaning build <span class="built_in">dir</span> <span class="keyword">for</span> brotlipy</span><br><span class="line">Failed to build brotlipy</span><br><span class="line">ERROR: ERROR: Failed to build installable wheels <span class="keyword">for</span> some pyproject.toml based projects (brotlipy)</span><br></pre></td></tr></table></figure>
+
+<p>在issue中查到，包环境需要3.7.6</p>
+<h3 id="创建python-3-7"><a href="#创建python-3-7" class="headerlink" title="创建python&#x3D;3.7"></a>创建python&#x3D;3.7</h3><p><code>conda create -n andrew python=3.7</code></p>
+<p>报错：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Collecting package metadata (current_repodata.json): <span class="keyword">done</span></span><br><span class="line">Solving environment: failed with repodata from current_repodata.json, will retry with next repodata <span class="built_in">source</span>.</span><br><span class="line">Collecting package metadata (repodata.json): <span class="keyword">done</span></span><br><span class="line">Solving environment: failed</span><br><span class="line"></span><br><span class="line">PackagesNotFoundError: The following packages are not available from current channels:</span><br><span class="line"></span><br><span class="line">  - python==3.7</span><br><span class="line"></span><br><span class="line">Current channels:</span><br><span class="line"></span><br><span class="line">  - https://conda.anaconda.org/conda-forge/osx-arm64</span><br><span class="line">  - https://conda.anaconda.org/conda-forge/noarch</span><br><span class="line"></span><br><span class="line">To search <span class="keyword">for</span> alternate channels that may provide the conda package you<span class="string">&#x27;re</span></span><br><span class="line"><span class="string">looking for, navigate to</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    https://anaconda.org</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">and use the search bar at the top of the page.</span></span><br></pre></td></tr></table></figure>
+
+<p>在stack overflow上查找到原因：Since Python 3.8 had been released for about a year when Apple Silicon hit the market, Python 3.7 builds for osx-arm64 were never part of the regular build matrix for Conda Forge.简单来说就是3.7太老了，不支持苹果M1芯片的osx-arm64架构</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>先不指定python版本，创建一个环境后修改架构为osx-64，再安装python3.7</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## create empty environment</span></span><br><span class="line">conda create -n py37</span><br><span class="line"></span><br><span class="line"><span class="comment">## activate</span></span><br><span class="line">conda activate py37</span><br><span class="line"></span><br><span class="line"><span class="comment">## use x86_64 architecture channel(s)</span></span><br><span class="line">conda config --<span class="built_in">env</span> --<span class="built_in">set</span> subdir osx-64</span><br><span class="line"></span><br><span class="line"><span class="comment">## install python, numpy, etc. (add more packages here...)</span></span><br><span class="line">conda install python=3.7</span><br><span class="line"></span><br><span class="line">pip install -r requirements.txt</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>成功解决</p>
 
   </div>
   
@@ -2739,7 +2690,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-23T21:58:20+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-23T22:18:56+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2024年9月23日</p>
@@ -2751,8 +2702,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%A8%A1/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>数模</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MATLAB/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>MATLAB</p></a></div>
-  <span hidden itemprop="keywords">数模 MATLAB</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/system/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>system</p></a></div>
+  <span hidden itemprop="keywords">system</span>
 
 
         
@@ -2765,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/&title=线性规划模型 - EarendelH's Journal&summary=阅读数模培训PPT的笔记"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://earendelh.github.io/2024/09/23/py37onmac/&title=在M1芯片的Mac上安装Python 3.7 - EarendelH's Journal&summary=在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。"
           
           >
           
@@ -2777,7 +2728,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/&title=线性规划模型 - EarendelH's Journal&summary=阅读数模培训PPT的笔记"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://earendelh.github.io/2024/09/23/py37onmac/&title=在M1芯片的Mac上安装Python 3.7 - EarendelH's Journal&summary=在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。"
           
           >
           
@@ -2799,7 +2750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/&title=线性规划模型 - EarendelH's Journal&summary=阅读数模培训PPT的笔记"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://earendelh.github.io/2024/09/23/py37onmac/&title=在M1芯片的Mac上安装Python 3.7 - EarendelH's Journal&summary=在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。"
           
           >
           
@@ -2832,24 +2783,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/09/18/deploymkdocs/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>MkDocs(Material) + Github Pages 部署记录</p>
+      
+        <a class='next' href='/2024/09/18/deploymkdocs/'>
+          <p class='title'>MkDocs(Material) + Github Pages 部署记录<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>最近在打超算比赛的过程中想逐渐养成做记录的习惯，一是方便自己往后在部署同样或类似的环境时能够快速找到解决方案，二是发现有关超算环境等问题的wiki比较少，希望自己的记录能够帮助到其他人。在Not...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/08/26/%E9%9D%9E%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/'>
-          <p class='title'>非线性规划模型<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>阅读数模培训PPT的笔记
-
-
-非线性规划模型例题1 供应与选址一、基本假设  
-
-从料场到使用建筑工地之间均有支线道路相连。
-
-二、符号规定  
-
-$(a_i,b_i)$表示第i个建筑工地的坐标...</p>
         </a>
       
     </div>
@@ -2865,7 +2802,7 @@ $(a_i,b_i)$表示第i个建筑工地的坐标...</p>
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/09/23/py37onmac/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -3107,7 +3044,7 @@ $(a_i,b_i)$表示第i个建筑工地的坐标...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">线性规划模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E9%A2%981"><span class="toc-number">1.1.</span> <span class="toc-text">例题1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">线性规划模型一般形式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MATLAB%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.1.</span> <span class="toc-text">MATLAB实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#linprog-%E5%87%BD%E6%95%B0"><span class="toc-number">2.1.1.</span> <span class="toc-text">linprog 函数</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E7%9B%AE%E6%A0%87%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">多目标线性规划模型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%8B%E9%A2%982-1998%E5%B9%B4%E5%85%A8%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AB%9E%E8%B5%9BA%E9%A2%98-%E6%8A%95%E8%B5%84%E7%9A%84%E6%94%B6%E7%9B%8A%E5%92%8C%E9%A3%8E%E9%99%A9"><span class="toc-number">3.1.</span> <span class="toc-text">例题2 1998年全国数学建模竞赛A题:投资的收益和风险</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E9%87%8D%E7%8E%B0"><span class="toc-number">1.</span> <span class="toc-text">问题重现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E4%BD%BF%E7%94%A8python3-7"><span class="toc-number">1.1.</span> <span class="toc-text">不使用python3.7</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BApython-3-7"><span class="toc-number">1.2.</span> <span class="toc-text">创建python&#x3D;3.7</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">2.</span> <span class="toc-text">解决方案</span></a></li></ol>
     </div>
   </section>
 
@@ -4079,60 +4016,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
-        <script>
-  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    // 文章章节标题不能为 “MathJax” ，否则会报错。
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typesetPromise();
-  }
-</script>
-
-
-
 </pjax>
 
 <script>
@@ -4264,7 +4147,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"EarendelH's Journal","url":"https://earendelh.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/","sameAs":["https://github.com/volantis-x"],"description":"寄系打工人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://earendelh.github.io/","name":"EarendelH's Journal"}},{"@type":"ListItem","position":2,"item":{"@id":"https://earendelh.github.io/categories/数模/","name":"数模"}},{"@type":"ListItem","position":3,"item":{"@id":"https://earendelh.github.io/2024/08/26/线性规划模型/","name":"线性规划模型"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"EarendelH's Journal","url":"https://earendelh.github.io/","keywords":null,"description":"寄系打工人日常","author":{"@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/","description":"寄系打工人日常"},"publisher":{"@type":"Organization","name":"EarendelH's Journal","url":"https://earendelh.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://earendelh.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"线性规划模型","description":"阅读数模培训PPT的笔记","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/"},"author":{"@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/"},"publisher":{"@type":"Organization","name":"EarendelH's Journal","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://earendelh.github.io/2024/08/26/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E6%A8%A1%E5%9E%8B/","wordCount":12,"datePublished":"2024-08-25T16:00:00.000Z","dateModified":"2024-09-23T13:58:20.214Z","articleSection":"数模","keywords":"数模,MATLAB","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"EarendelH's Journal","url":"https://earendelh.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/","sameAs":["https://github.com/volantis-x"],"description":"寄系打工人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://earendelh.github.io/","name":"EarendelH's Journal"}},{"@type":"ListItem","position":2,"item":{"@id":"https://earendelh.github.io/categories/7788/","name":"7788"}},{"@type":"ListItem","position":3,"item":{"@id":"https://earendelh.github.io/2024/09/23/py37onmac/","name":"在M1芯片的Mac上安装Python 3.7"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"EarendelH's Journal","url":"https://earendelh.github.io/","keywords":null,"description":"寄系打工人日常","author":{"@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/","description":"寄系打工人日常"},"publisher":{"@type":"Organization","name":"EarendelH's Journal","url":"https://earendelh.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://earendelh.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"在M1芯片的Mac上安装Python 3.7","description":"在安装吴恩达2022ML的笔记环境时遇到了一些小问题，发现是部分包需要python3.7版本，但是创建python&#x3D;3.7的conda环境时又发现python3.7太老了，不支持M1芯片的arm64架构，在issue和stackoverflow上找到了解决方案，在此记录。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://earendelh.github.io/2024/09/23/py37onmac/"},"author":{"@type":"Person","name":"Earendel","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://earendelh.github.io/"},"publisher":{"@type":"Organization","name":"EarendelH's Journal","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://earendelh.github.io/2024/09/23/py37onmac/","wordCount":141,"datePublished":"2024-09-23T13:51:07.000Z","dateModified":"2024-09-23T14:18:56.694Z","articleSection":"7788","keywords":"system","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
