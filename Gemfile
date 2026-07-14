@@ -10,5 +10,5 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages', '= 232'
-gem 'connection_pool', '2.5.0'
+gem 'connection_pool', '3.0.2'
 gem 'faraday-retry', '~> 2.2'
