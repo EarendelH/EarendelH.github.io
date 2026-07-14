@@ -10,5 +10,5 @@ _site/
 .jekyll-metadata
 .sass-cache/
 .bundle/
-vendor/
+/vendor/
 Ziheng Wang CV.pdf
