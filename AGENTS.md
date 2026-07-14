@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This is a Jekyll academic site based on Academic Pages. Standalone content lives in `_pages/`: `about.md` is the homepage, while `experience.md`, `publications.html`, and `blog.html` provide the main sections. Published papers are individual records in `_publications/`. Blog posts live in `_posts/` and must use `YYYY-MM-DD-descriptive-slug.md` filenames. Store post media under `images/blog/<post-slug>/` and shared images directly under `images/`.
+This is a Jekyll academic site based on Academic Pages. Standalone content lives in `_pages/`: `about.md` is the homepage, while `experience.md` and `publications.html` provide the main sections. Published papers are individual records in `_publications/`. The offline legacy blog—including posts, media, and blog-only pages—is retained under `archive/legacy-blog/` and excluded from Jekyll output. Do not restore it to `_posts/` or public navigation unless publication is explicitly requested.
 
 Theme templates are in `_layouts/` and `_includes/`; Sass sources are in `_sass/`, with the entry point at `assets/css/main.scss`. Site identity, collections, plugins, and author links are configured in `_config.yml`. Navigation order is controlled by `_data/navigation.yml`.
 
@@ -22,7 +22,7 @@ Use two-space indentation in YAML and front matter. Quote titles containing punc
 
 ## Testing Guidelines
 
-There is no unit-test suite or coverage target. Every change must pass `bundle exec jekyll build` without warnings or errors. Preview all changed routes locally and check mobile layout, light/dark modes, image paths, links, syntax highlighting, and MathJax rendering. For migrated posts, verify each local image exists under `images/blog/`.
+There is no unit-test suite or coverage target. Every change must pass `bundle exec jekyll build` without warnings or errors. Preview changed routes locally and check mobile layout, light/dark modes, image paths, and links. The site checker must confirm that no archived blog pages are generated and that all archived posts and media remain present.
 
 ## Commit & Pull Request Guidelines
 

@@ -35,7 +35,7 @@ tag_archive:
 comments:
   provider:
 atom_feed:
-  hide: false
+  hide: true
   path: "/feed.xml"
 analytics:
   provider: "false"
@@ -47,6 +47,7 @@ exclude:
   - .github
   - .jekyll-cache
   - .sass-cache
+  - archive/legacy-blog
   - node_modules
   - vendor
   - scripts

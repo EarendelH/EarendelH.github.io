@@ -14,7 +14,7 @@ redirect_from:
   <p>I am a Computer Science undergraduate at Southern University of Science and Technology (SUSTech). My work explores reinforcement learning for automated circuit design, context-aware LLM agents for EDA, and architecture-aware high-performance computing.</p>
   <div class="home-hero__actions">
     <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">View publications</a>
-    <a class="btn btn--inverse" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+    <a class="btn btn--inverse" href="{{ '/experience/' | relative_url }}">Explore experience</a>
   </div>
 </section>
 
@@ -58,16 +58,3 @@ redirect_from:
     <p>Design, Automation &amp; Test in Europe Conference, 1–7.</p>
   </article>
 </div>
-
-## Recent writing
-
-<div class="post-card-grid">
-{% for post in site.posts limit:3 %}
-  <article class="post-card">
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}</p>
-  </article>
-{% endfor %}
-</div>
-
