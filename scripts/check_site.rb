@@ -47,6 +47,11 @@ end
 
 forbidden = [
   "15387336093",
+  "12310401@mail.sustech.edu.cn",
+  "3.79 / 4.0",
+  "3.79/4.0",
+  "90.65/100",
+  "GPA at SUSTech",
   "GLARE: Generalizable Large-scale Analog Sizing",
   "Reinforcement Learning with Group Relative Policy Optimization for Fast Analog-LDO Sizing",
   "Physics-Informed Hybrid Modeling and Model Predictive Control for Energy-Efficient Building HVAC Systems",
@@ -54,8 +59,24 @@ forbidden = [
 ]
 
 site_text = html_files.map { |file| File.read(file, encoding: "UTF-8") }.join("\n")
+visible_site_text = html_files.map do |file|
+  Nokogiri::HTML(File.read(file, encoding: "UTF-8")).text
+end.join("\n")
 forbidden.each do |text|
   errors << "Forbidden private or non-public content found: #{text}" if site_text.include?(text)
+end
+
+public_email = "wangziheng2023@mail.sustech.edu.cn"
+errors << "Public email is not visibly rendered." unless visible_site_text.include?(public_email)
+errors << "CV page was not rendered." unless SITE.join("cv", "index.html").file?
+errors << "Retired Experience page was rendered." if SITE.join("experience", "index.html").file?
+errors << "Generated HTML still links to /experience/." if site_text.include?("/experience/")
+
+if SITE.join("cv", "index.html").file?
+  cv_text = Nokogiri::HTML(File.read(SITE.join("cv", "index.html"), encoding: "UTF-8")).text
+  %w[Education Internships Research Competitions].each do |heading|
+    errors << "CV is missing the #{heading} section." unless cv_text.include?(heading)
+  end
 end
 
 rendered_blog_files = Dir.glob(SITE.join("blog", "**", "*")).select { |path| File.file?(path) }
@@ -81,7 +102,7 @@ end
 errors << "Expected 2 publications, found #{Dir.glob(SITE.join('publication', '*', 'index.html')).length}." unless Dir.glob(SITE.join("publication", "*", "index.html")).length == 2
 
 if errors.empty?
-  puts "Site checks passed: #{html_files.length} HTML pages, no public blog, 2 publications; archive retains 19 posts and 207 media files."
+  puts "Site checks passed: #{html_files.length} HTML pages, CV and public email rendered, no public blog, 2 publications; archive retains 19 posts and 207 media files."
 else
   warn errors.join("\n")
   exit 1

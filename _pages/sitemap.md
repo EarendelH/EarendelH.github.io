@@ -8,4 +8,4 @@ author_profile: false
 
 - [Home]({{ '/' | relative_url }})
 - [Publications]({{ '/publications/' | relative_url }})
-- [Experience]({{ '/experience/' | relative_url }})
+- [CV]({{ '/cv/' | relative_url }})

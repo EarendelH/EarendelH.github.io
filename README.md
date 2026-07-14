@@ -17,7 +17,7 @@ After a production build, run `bundle exec ruby scripts/check_site.rb` to valida
 ## Content
 
 - `_pages/about.md` — homepage
-- `_pages/experience.md` — research, engineering, and competitions
+- `_pages/cv.md` — education, internships, research, competitions, and skills
 - `_publications/` — formally published papers only
 - `archive/legacy-blog/` — unpublished legacy blog archive (19 posts and associated media)
 

@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This is a Jekyll academic site based on Academic Pages. Standalone content lives in `_pages/`: `about.md` is the homepage, while `experience.md` and `publications.html` provide the main sections. Published papers are individual records in `_publications/`. The offline legacy blog—including posts, media, and blog-only pages—is retained under `archive/legacy-blog/` and excluded from Jekyll output. Do not restore it to `_posts/` or public navigation unless publication is explicitly requested.
+This is a Jekyll academic site based on Academic Pages. Standalone content lives in `_pages/`: `about.md` is the homepage, while `cv.md` and `publications.html` provide the main sections. Published papers are individual records in `_publications/`. The offline legacy blog—including posts, media, and blog-only pages—is retained under `archive/legacy-blog/` and excluded from Jekyll output. Do not restore it to `_posts/` or public navigation unless publication is explicitly requested.
 
 Theme templates are in `_layouts/` and `_includes/`; Sass sources are in `_sass/`, with the entry point at `assets/css/main.scss`. Site identity, collections, plugins, and author links are configured in `_config.yml`. Navigation order is controlled by `_data/navigation.yml`.
 

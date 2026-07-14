@@ -14,12 +14,12 @@ redirect_from:
   <p>I am a Computer Science undergraduate at Southern University of Science and Technology (SUSTech). My work explores reinforcement learning for automated circuit design, context-aware LLM agents for EDA, and architecture-aware high-performance computing.</p>
   <div class="home-hero__actions">
     <a class="btn btn--primary" href="{{ '/publications/' | relative_url }}">View publications</a>
-    <a class="btn btn--inverse" href="{{ '/experience/' | relative_url }}">Explore experience</a>
+    <a class="btn btn--inverse" href="{{ '/cv/' | relative_url }}">View CV</a>
   </div>
 </section>
 
 <div class="home-stats" aria-label="Academic highlights">
-  <div><strong>3.79 / 4.0</strong><span>GPA at SUSTech</span></div>
+  <div><strong>AAAI · DATE</strong><span>Published research</span></div>
   <div><strong>2023–Present</strong><span>Computer Science</span></div>
   <div><strong>AI + Systems</strong><span>Research focus</span></div>
 </div>
