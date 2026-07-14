@@ -1,0 +1,46 @@
+/* Ziheng theme — dark */
+$primary-color: #5eead4;
+$gray: #94a3b8;
+$dark-gray: #dbe7f3;
+$darker-gray: #eaf2f8;
+$light-gray: #94a3b8;
+
+$danger-color: #f87171;
+$info-color: #7dd3fc;
+$notice-color: #94a3b8;
+$success-color: #86efac;
+$warning-color: #fdba74;
+
+$border-radius: 10px;
+$box-shadow: 0 16px 36px rgba(0, 0, 0, 0.24);
+$global-transition: all 0.2s ease-in-out;
+$masthead-height: 72px;
+$navicon-width: 28px;
+$navicon-height: 4px;
+$sidebar-link-max-width: 250px;
+$sidebar-screen-min-width: 1024px;
+
+html[data-theme="dark"] {
+  --global-base-color: #{$primary-color};
+  --global-bg-color: #0b1220;
+  --global-footer-bg-color: #070d18;
+  --global-border-color: #26364b;
+  --global-dark-border-color: #334155;
+  --global-code-background-color: #111c2d;
+  --global-code-text-color: #dbeafe;
+  --global-fig-caption-color: #94a3b8;
+  --global-link-color: #5eead4;
+  --global-link-color-hover: #99f6e4;
+  --global-link-color-visited: #93c5c7;
+  --global-masthead-link-color: #e5eef8;
+  --global-masthead-link-color-hover: #5eead4;
+  --global-text-color: #dbe7f3;
+  --global-text-color-light: #94a3b8;
+  --global-thead-color: #162237;
+  --surface-color: #111c2d;
+  --surface-muted: #162237;
+  --accent-soft: #153b3a;
+  --hero-gradient: linear-gradient(135deg, #0d292a 0%, #15213a 58%, #0b1220 100%);
+  --card-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+

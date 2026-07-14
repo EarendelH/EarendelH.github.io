@@ -1,0 +1,47 @@
+/* Ziheng theme — light */
+$primary-color: #0f766e;
+$gray: #667085;
+$dark-gray: #253247;
+$darker-gray: #172033;
+$light-gray: #94a3b8;
+$lighter-gray: #e6edf3;
+
+$danger-color: #dc2626;
+$info-color: #0369a1;
+$notice-color: #64748b;
+$success-color: #15803d;
+$warning-color: #c2410c;
+
+$border-radius: 10px;
+$box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+$global-transition: all 0.2s ease-in-out;
+$masthead-height: 72px;
+$navicon-width: 28px;
+$navicon-height: 4px;
+$sidebar-link-max-width: 250px;
+$sidebar-screen-min-width: 1024px;
+
+:root {
+  --global-base-color: #{$primary-color};
+  --global-bg-color: #f8fafc;
+  --global-footer-bg-color: #0f172a;
+  --global-border-color: #dbe4ee;
+  --global-dark-border-color: #cbd5e1;
+  --global-code-background-color: #eef3f7;
+  --global-code-text-color: #{$darker-gray};
+  --global-fig-caption-color: #64748b;
+  --global-link-color: #0f766e;
+  --global-link-color-hover: #0b5f59;
+  --global-link-color-visited: #315f68;
+  --global-masthead-link-color: #{$darker-gray};
+  --global-masthead-link-color-hover: #{$primary-color};
+  --global-text-color: #{$dark-gray};
+  --global-text-color-light: #{$gray};
+  --global-thead-color: #eef4f6;
+  --surface-color: #ffffff;
+  --surface-muted: #f1f5f9;
+  --accent-soft: #dff4f0;
+  --hero-gradient: linear-gradient(135deg, #ecfdf8 0%, #eef4ff 58%, #f8fafc 100%);
+  --card-shadow: 0 18px 45px rgba(24, 39, 58, 0.08);
+}
+

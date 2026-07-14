@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+<p class="page-intro">This page lists formally published work with links to the official proceedings.</p>
+
+{% include base_path %}
+{% for category in site.publication_category %}
+  {% assign title_shown = false %}
+  {% for post in site.publications reversed %}
+    {% if post.category != category[0] %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2 class="archive__subtitle">{{ category[1].title }}</h2>
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}
