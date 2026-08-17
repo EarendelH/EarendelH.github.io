@@ -35,7 +35,7 @@ jobs:
       - name: Validate generated site
         run: bundle exec ruby scripts/check_site.rb
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
 
   deploy:
     if: github.event_name == 'push'
